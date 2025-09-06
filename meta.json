@@ -1,0 +1,80 @@
+{
+  "play (dead)": {
+    "dtype": "int8",
+    "shape": [1],
+    "offset": 0,
+    "description": "Starts audio streaming."
+  },
+  "paused": {
+    "dtype": "int8",
+    "shape": [1],
+    "offset": 1,
+    "description": "Pauses audio streaming."
+  },
+  "stop (dead)": {
+    "dtype": "int8",
+    "shape": [1],
+    "offset": 2,
+    "description": "Pauses audio streaming and resets position."
+  },
+  "read (dead)": {
+    "dtype": "int8",
+    "shape": [1],
+    "offset": 3,
+    "description": "Reads audio file located at audio_path variable."
+  },
+  "position": {
+    "dtype": "uint32",
+    "shape": [1],
+    "offset": 4,
+    "description": "Current position of the audio stream."
+  },
+  "audio_path": {
+    "dtype": "U1",
+    "shape": [256],
+    "offset": 8,
+    "description": "Path of a given audio. Unicode-16 encoding (4 bytes per character (I thought it was 2 bytes before))."
+  },
+  "audio_data": {
+    "dtype": "float32",
+    "shape": [65536],
+    "offset": 1032,
+    "description": "The audio data that will be used by AudioHandler and VisualHandler."
+  },
+  "length": {
+    "dtype": "uint32",
+    "shape": [1],
+    "offset": 263176,
+    "description": "Length of the audio."
+  },
+  "samplerate": {
+    "dtype": "uint32",
+    "shape": [1],
+    "offset": 263180,
+    "description": "Current samplerate."
+  },
+  "call_read": {
+    "dtype": "int8",
+    "shape": [1],
+    "offset": 263184,
+    "description": "Calls AudioHandler.read()."
+  },
+  "call_resume": {
+    "dtype": "int8",
+    "shape": [1],
+    "offset": 263185,
+    "description": "Calls AudioHandler.resume()."
+  },
+  "call_stop": {
+    "dtype": "int8",
+    "shape": [1],
+    "offset": 263186,
+    "description": "Calls AudioHandler.stop()."
+  },
+  "call_pause": {
+    "dtype": "int8",
+    "shape": [1],
+    "offset": 263187,
+    "description": "Calls AudioHandler.pause()."
+  }
+}
