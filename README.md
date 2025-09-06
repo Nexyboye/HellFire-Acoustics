@@ -16,10 +16,10 @@ Supported types:
 
 
 Arrangement:
-top menu: visual settings / window handling
-bot menu: basic audio manipulation
-left menu: queue / playlist (not implemented yet)
-right menu: file manager
+ - top menu: visual settings / window handling
+ - bot menu: basic audio manipulation
+ - left menu: queue / playlist (not implemented yet)
+ - right menu: file manager
 
 
 Keybinds:
